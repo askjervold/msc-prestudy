@@ -181,15 +181,15 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Thesis Title} % Your thesis title - this is used in the title and abstract
+\thesistitle{Usage of Multi-touch in Multi-user Learning Applications: A preliminary study} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
-\supervisor{Dr. James \textsc{Smith}} % You supervisor's name - this is used in the title page
+\supervisor{Michail \textsc{Giannakos}} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
 \examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
-\degree{Doctor of Philosophy} % Your degree name - this is currently used in the title page and abstract
+\degree{Master of Science} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   
-\authors{John \textsc{Smith}} % Your name - this is used in the title page and abstract
+\authors{Audun \textsc{Skjervold}} % Your name - this is used in the title page and abstract
 %-------------------------------------------------   
 \addresses{} % Your address - this is not currently used anywhere in the template, cite it with \addressnames if you want it
 %-------------------------------------------------   
@@ -197,21 +197,21 @@
 %-------------------------------------------------   
 \keywords{} % Keywords for your thesis - this is not currently used anywhere in the template, cite it with \keywordnames if you want it
 %-------------------------------------------------   
-\university{\texorpdfstring{\href{http://www.university.com} % Your university's URL
-                {University Name}} % Your university's name - this is currently used in the title page
-                {University Name}}
+\university{\texorpdfstring{\href{http://www.ntnu.edu} % Your university's URL
+                {Norwegian University of Science and Technology}} % Your university's name - this is currently used in the title page
+                {NTNU}}
 %-------------------------------------------------   
-\UNIVERSITY{\texorpdfstring{\href{University Web Site URL Here (include http://)} % Your university's URL
-                {UNIVERSITY NAME (IN BLOCK CAPITALS)}} % Your university's name in capitals - this is currently used in the abstract page
-                {UNIVERSITY NAME (IN BLOCK CAPITALS)}}
+\UNIVERSITY{\texorpdfstring{\href{http://www.ntnu.edu} % Your university's URL
+                {NORWEGIAN UNIVERSITY OF SCIENCE AND TECHNOLOGY}} % Your university's name in capitals - this is currently used in the abstract page
+                {NTNU}}
 %-------------------------------------------------                
-\department{\texorpdfstring{\href{Department or School Web Site URL Here (include http://)} % Your department's URL
-                {Department or School Name}} % Your department's name - used in the title page and abstract
-                {Department or School Name}}
+\department{\texorpdfstring{\href{http://www.ntnu.edu/idi} % Your department's URL
+                {Department of Computer and Information Science}} % Your department's name - used in the title page and abstract
+                {IDI}}
 %-------------------------------------------------                
-\DEPARTMENT{\texorpdfstring{\href{Department or School Web Site URL Here (include http://)} % Your department's URL
-                {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}} % Your department's name in capitals - this is not currently used anywhere in the template, cite it with \DEPTNAME if you want it
-                {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}}
+\DEPARTMENT{\texorpdfstring{\href{http://www.ntnu.edu/idi} % Your department's URL
+                {DEPARTMENT OF COMPUTER AND INFORMATION SCIENCE}} % Your department's name in capitals - this is not currently used anywhere in the template, cite it with \DEPTNAME if you want it
+                {IDI}}
 %-------------------------------------------------                
 \group{\texorpdfstring{\href{Research Group Web Site URL Here (include http://)} % Your research group's URL
                 {Research Group Name}} % Your research group's name - this is currently used in the title page 
@@ -221,13 +221,13 @@
                 {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}} % Your research group's name in capitals - this is not currently used anywhere in the template, cite it with \GROUPNAME if you want it
                 {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}}
 %-------------------------------------------------                
-\faculty{\texorpdfstring{\href{Faculty Web Site URL Here (include http://)} % Your faculty's URL
-                {Faculty Name}} % Your faculty's name - this is currently used in the abstract page
-                {Faculty Name}}
+\faculty{\texorpdfstring{\href{http://www.ntnu.edu/ime} % Your faculty's URL
+                {Faculty of Information Technology, Mathematics and Electrical Engineering}} % Your faculty's name - this is currently used in the abstract page
+                {IME}}
 %-------------------------------------------------                
-\FACULTY{\texorpdfstring{\href{Faculty Web Site URL Here (include http://)} % Your faculty's URL
-                {FACULTY NAME (IN BLOCK CAPITALS)}} % Your faculty's name in capitals - this is not currently used anywhere in the template, cite it with \FACNAME if you want it
-                {FACULTY NAME (IN BLOCK CAPITALS)}}
+\FACULTY{\texorpdfstring{\href{http://www.ntnu.edu/ime} % Your faculty's URL
+                {FACULTY OF INFORMATION TECHNOLOGY, MATHEMATICS AND ELECTRICAL ENGINEERING}} % Your faculty's name in capitals - this is not currently used anywhere in the template, cite it with \FACNAME if you want it
+                {IME}}
 %----------------------------------------------------------------------------------------    
 
 % The default title page, this is not used in this www.latextemplates.com version            
