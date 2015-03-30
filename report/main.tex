@@ -85,7 +85,7 @@
 \deptname\ % Research group name and department name
  
 {\large \today}\\[4cm] % Date
-%\includegraphics{Logo} % University/department logo - uncomment to place it
+\includegraphics{Figures/logo-ntnu.png} % University/department logo - uncomment to place it
  
 \vfill
 \end{center}
@@ -100,7 +100,7 @@
 
 \abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+This paper is the result of a preliminary study performed for my Master of Science thesis. It aims to describe the project my thesis will focus on and how the project will be carried out. It also contains a literature study of previous research and work on similar topics, aiming to justify my thesis.
 }
 
 \clearpage % Start a new page
@@ -114,26 +114,6 @@ The Thesis Abstract is written here (and usually kept to just this page). The pa
 \lhead{\emph{Contents}} % Set the left side page header to "Contents"
 \tableofcontents % Write out the Table of Contents
 
-\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
-\listoffigures % Write out the List of Figures
-
-\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
-\listoftables % Write out the List of Tables
-
-%----------------------------------------------------------------------------------------
-%	ABBREVIATIONS
-%----------------------------------------------------------------------------------------
-
-\clearpage % Start a new page
-
-\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
-
-\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
-\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
-{
-%\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
-}
-
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
 %----------------------------------------------------------------------------------------
@@ -146,8 +126,8 @@ The Thesis Abstract is written here (and usually kept to just this page). The pa
 % Uncomment the lines as you write the chapters
 
 \input{Chapters/Chapter1}
-%\input{Chapters/Chapter2} 
-%\input{Chapters/Chapter3}
+\input{Chapters/Chapter2} 
+\input{Chapters/Chapter3}
 %\input{Chapters/Chapter4} 
 %\input{Chapters/Chapter5} 
 %\input{Chapters/Chapter6} 
