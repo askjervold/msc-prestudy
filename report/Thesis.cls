@@ -181,7 +181,7 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Usage of Multi-touch in Multi-user Learning Applications: A preliminary study} % Your thesis title - this is used in the title and abstract
+\thesistitle{Use of Multi-Touch and Gamification in Multi-User Learning Applications: A preliminary study} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
 \supervisor{Michail \textsc{Giannakos}} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
