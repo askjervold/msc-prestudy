@@ -20,7 +20,9 @@ This chapter describes the proposed solution.
 
 \section{Architecture}
 
-This section describes the proposed improved architecture for the application.
+The Flora Danica application is used as a base for several other applications, such as those of the Norwegian Deaf Museum and of the Norwegian States Archive. Therefore it is important that implementation is kept general and easily modifiable. Features beyond the absolute core should be optional, as all features may not be interesting or suited for all variations of the application.
+
+To make it easy to opt into or out of certain features, it makes sense to modularize them. By moving each feature into its own module, it's easy for an application to add or remove features as they gain or lose relevancy. Keeping features in separate modules has the added benefit of making them easy to maintain and modify.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 3
@@ -42,25 +44,15 @@ This section describes new methods of interaction used in the existing quiz part
 %	SUBSECTION 3.2
 %----------------------------------------------------------------------------------------
 
-\subsection{High-Score List}
+\subsection{Rewards}
 
-A high-score list where the highest scoring players of all time are recorded will motivate players to do well, as other players can see who has previously done well.
+People like being rewarded, and knowing there is a reward waiting, users are more likely to be motivated to perform well. It doesn't matter that much what the reward is, as long as the user knows that some kind of reward awaits them should they perform well.
 
-%----------------------------------------------------------------------------------------
-%	SUBSECTION 3.3
-%----------------------------------------------------------------------------------------
+We suggest a few different reward schemes here, but to enable them, we need to track some additional data beyond what is tracked today (which is where users press and how many correct answers they get). By tracking data such as time spent on each question (or to complete each task in other games than the quiz game), what types of questions or tasks the user successfully answers/completes (by tagging questions/tasks with categories), we can award players with achievements and badges based on this.
 
-\subsection{One-Time Achievements}
+The achievements can be divided into two types: long-term achievements and per-game awards. Long-term achievements can be listed in a "hall of fame" with the names of the players who received them, which will give well-performing players recognition from future players. Examples of such achievements can be scoring above a certain threshold or completing a certain amount of levels/rounds, gaining perfect scores or correct answers on all questions in a certain category, etc.
 
-Similarly to the high-score list, one-time achievements tagged with the name of who first earned it can motivate players to do well.
-
-%----------------------------------------------------------------------------------------
-%	SUBSECTION 3.4
-%----------------------------------------------------------------------------------------
-
-\subsection{Badges}
-
-Badges that can be awarded to each player for performance in a single round can motivate competition or teamwork within the play session. These badges could also be listed together with a list of all players who have achieved them.
+Per-game awards represent smaller achievements and promote competition between players playing together at the same time. By giving awards to all participating players, we also help players feel included. These small awards should be humoristic, and don't necessarily need to award a positive aspect such as being best, but can "award" players for most incorrect answers or most hits outside their answer box. An example of a popular game that uses this approach is the multiplayer online battle arena game \emph{Heroes of Newerth}\citep{Newerth}. In their \emph{Mid Wars} game mode, a mode much more focused on fun than the competitive aspect, each player will receive two such awards at the end of each game. The awards can be based on a large number of different statistics, such as hero damage or kills, buildings destroyed, gold earned and so on\citep{MidWars}. There are also some number of awards that award feats that may not be particularly impressive, such as having no kills.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
