@@ -12,7 +12,7 @@
 
 \section{Introduction}
 
-This chapter describes the proposed solution.
+This chapter describes the proposed solution. It starts by discussing architectural decisions, before moving on to extensions to the existing application. We will cover changes to game modes, new methods of interaction as well as reward systems. Finally, we wrap up the chapter with a description of how the user studies will be performed.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -30,10 +30,18 @@ To make it easy to opt into or out of certain features, it makes sense to modula
 
 \section{Extensions}
 
-This section describes proposed extensions to the application and how they will improve the solution.
+In the existing application, data is gathered about where users touch, the time spent to answer questions and the number of correctly answered questions. By tagging questions and tasks with various categories, we are able to use these tags along with the collected data to extend the application with aspects from gamification. This section describes the proposed extensions and how they will improve the solution.
 
 %----------------------------------------------------------------------------------------
 %	SUBSECTION 3.1
+%----------------------------------------------------------------------------------------
+
+\subsection{Game Modes and Randomization}
+
+In the current version of the application, each playthrough will present the players with all available questions. For an instance of the application that is placed at the end of a museum, this approach lets the application summarize all the information the museum visitors have or should have gained during their visit. However, this approach may feel more like an exam than a game, which may make it less appealing to play.
+
+%----------------------------------------------------------------------------------------
+%	SUBSECTION 3.2
 %----------------------------------------------------------------------------------------
 
 \subsection{New Methods of Interaction}
@@ -41,14 +49,12 @@ This section describes proposed extensions to the application and how they will 
 This section describes new methods of interaction used in the existing quiz part of the application, such as pinching to indicate larger or smaller.
 
 %----------------------------------------------------------------------------------------
-%	SUBSECTION 3.2
+%	SUBSECTION 3.3
 %----------------------------------------------------------------------------------------
 
 \subsection{Rewards}
 
-People like being rewarded, and knowing there is a reward waiting, users are more likely to be motivated to perform well. It doesn't matter that much what the reward is, as long as the user knows that some kind of reward awaits them should they perform well.
-
-We suggest a few different reward schemes here, but to enable them, we need to track some additional data beyond what is tracked today (which is where users press and how many correct answers they get). By tracking data such as time spent on each question (or to complete each task in other games than the quiz game), what types of questions or tasks the user successfully answers/completes (by tagging questions/tasks with categories), we can award players with achievements and badges based on this.
+People like being rewarded, and knowing there is a reward waiting, users are more likely to be motivated to perform well. It doesn't matter that much what the reward is, as long as the user knows that some kind of reward awaits them should they perform well. By tracking data such as time spent on each question and what types of questions or tasks the user successfully answers/completes, we can award players with achievements and badges based on this.
 
 The achievements can be divided into two types: long-term achievements and per-game awards. Long-term achievements can be listed in a "hall of fame" with the names of the players who received them, which will give well-performing players recognition from future players. Examples of such achievements can be scoring above a certain threshold or completing a certain amount of levels/rounds, gaining perfect scores or correct answers on all questions in a certain category, etc.
 
@@ -58,6 +64,6 @@ Per-game awards represent smaller achievements and promote competition between p
 %	SECTION 4
 %----------------------------------------------------------------------------------------
 
-\section{Conducting the Expiments}
+\section{Conducting the Experiments}
 
 This section describes how the experiments will be conducted.
