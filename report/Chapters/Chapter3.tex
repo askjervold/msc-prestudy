@@ -20,7 +20,7 @@ This chapter describes the proposed solution. It starts by discussing architectu
 
 \section{Architecture}
 
-The Flora Danica application is used as a base for several other applications, such as those of the Norwegian Deaf Museum and of the Norwegian States Archive. Therefore it is important that implementation is kept general and easily modifiable. Features beyond the absolute core should be optional, as all features may not be interesting or suited for all variations of the application.
+The Flora Danica application is used as a base for several other applications, such as those of the Norwegian Deaf Museum and of the Norwegian States Archive in Trondheim. Therefore it is important that implementation is kept general and easily modifiable. Features beyond the absolute core should be optional, as all features may not be interesting or suited for all variations of the application.
 
 To make it easy to opt into or out of certain features, it makes sense to modularize them. By moving each feature into its own module, it's easy for an application to add or remove features as they gain or lose relevancy. Keeping features in separate modules has the added benefit of making them easy to maintain and modify.
 
@@ -33,16 +33,23 @@ To make it easy to opt into or out of certain features, it makes sense to modula
 In the existing application, data is gathered about where users touch, the time spent to answer questions and the number of correctly answered questions. By tagging questions and tasks with various categories, we are able to use these tags along with the collected data to extend the application with aspects from gamification. This section describes the proposed extensions and how they will improve the solution.
 
 %----------------------------------------------------------------------------------------
-%	SUBSECTION 3.1
+%	SECTION 4
 %----------------------------------------------------------------------------------------
 
-\subsection{Game Modes, Randomization and Increased Challenge}
+\section{Game Modes, Randomization and Variable Difficulty}
 
 In the current version of the application, each playthrough will present the players with all available questions. For an instance of the application that is placed at the end of a museum, this approach lets the application summarize all the information the museum visitors have or should have gained during their visit. However, this approach may feel more like an exam than a game, which may make it less appealing to play.
 
-By supporting additional game modes, we can allow for more varied and entertaining play. Questions can be divided into groups of 5-10 questions based on tags to allow level or round based play. Each round presents a given number of questions randomly selected from the appropriate set that the players have to answer in a set amount of time. Each round increases the difficulty by selecting more difficult questions and/or decreasing the available time for the round. This eases the players into the game, but increases the challenge gradually, which makes for a more entertaining experience overall. By selecting the questions semi-randomly, and randomly selecting the order of the alternatives, we also place the difficulty on knowing the correct answers rather than knowing the location of the correct alternative (left or right) for each question (with all questions appearing each play, in the same order).
+By supporting additional game modes, we can allow for more varied and entertaining play. In addition to the current mode that presents all available questions, questions can be divided into groups of 5-10 questions based on tags to allow level or round based play. Each round presents a given number of questions randomly selected from the appropriate set that the players have to answer in a set amount of time. Each round increases the difficulty by selecting more difficult questions and/or decreasing the available time for the round. This eases the players into the game, but increases the challenge gradually, which makes for a more entertaining experience overall. By selecting the questions semi-randomly, and randomly selecting the order of the alternatives, we also place the difficulty on knowing the correct answers rather than knowing whether the left or right alternative is the correct for each question (with all questions appearing each play, in the same order).
 
-Another way of increasing the difficulty and challenge is to introduce additional alternatives to each question. A question with three alternatives can be considered more difficult than one with two, given that all the alternatives sound plausible. This also makes guessing the correct answer more difficult.
+Another way of increasing the difficulty and challenge is to introduce additional alternatives to each question. A question with three alternatives can be considered more difficult than one with two, provided that all the alternatives sound plausible. This also makes guessing the correct answer more difficult. It is however important that players playing together in coop mode know which alternatives each of them should answer. Therefore it makes sense to differentiate difficulties in increments of two alternatives, and because six alternatives is a bit excessive for relatively simple questions, coop mode should be limited to two difficulties: easy (two alternatives) and hard (four alternatives). The left player can then answer the leftmost alternatives with one or two fingers respectively, and vice versa for the right player. Versus mode can have any number of alternatives as the chosen alternative depends on the number of fingers (touch points) used to answer, but it makes sense to use the same difficulty levels as coop mode, with two and four alternatives. Additionally, versus mode can include a medium difficulty, with three alternatives.
+
+This leads to three main changes: Division of questions into rounds or levels, semi-randomized choice of questions for each round, and variable difficulty with harder difficulties having more alternatives per question. The player(s) will then make three choices before playing:
+\begin{enumerate}
+	\item Play together (coop mode) or against each other (versus mode)?
+	\item Play through all questions (summary mode) or timed rounds (level mode)?
+	\item What difficulty would you like to play?
+\end{enumerate}
 
 %----------------------------------------------------------------------------------------
 %	SUBSECTION 3.2
