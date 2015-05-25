@@ -55,13 +55,28 @@ This leads to three main changes: Division of questions into rounds or levels, s
 %	SECTION 5
 %----------------------------------------------------------------------------------------
 
-\subsection{Rewards}
+\section{Goals: High Scores and Achievements}
 
-People like being rewarded, and knowing there is a reward waiting, users are more likely to be motivated to perform well. It doesn't matter that much what the reward is, as long as the user knows that some kind of reward awaits them should they perform well. By tracking data such as time spent on each question and what types of questions or tasks the user successfully answers/completes, we can award players with achievements and badges based on this.
+The Flora Danica application is designed for use in informal learning situations, and will typically only be used once by each player at the end of a museum visit or similar situation. The game will test the players on the knowledge they gained during their visit, but the only goal in the existing application is getting as many points as possible by answering as many questions correctly as they can. Beyond this, however, there is currently nothing more.
 
-The achievements can be divided into two types: long-term achievements and per-game awards. Long-term achievements can be listed in a "hall of fame" with the names of the players who received them, which will give well-performing players recognition from future players. Examples of such achievements can be scoring above a certain threshold or completing a certain amount of levels/rounds, gaining perfect scores or correct answers on all questions in a certain category, etc.
+By implementing achievements we give the players additional goals to strive towards. However, because the games are not connected to any external achievement system, it is important that we give the achievements some additional meaning. By creating a "Hall of Fame", where achievements are listed with all players who have earned them, players can earn recognition from future players. Additionally, the institutions hosting the game can give out-game rewards for getting certain achievements. Whether to offer rewards and what those rewards are would be up to the individual institution, but examples could be something like a diploma, a trinket from their gift shop or a free ticket for two people to come back to the museum at a later time. Examples of achievements are:
+\begin{itemize}
+	\item \emph{Flawless}: Finish summary mode with no incorrect answers
+	\item \emph{Sprinter}: Finish each level in level mode in less than 30 seconds
+\end{itemize}
 
-Per-game awards represent smaller achievements and promote competition between players playing together at the same time. By giving awards to all participating players, we also help players feel included. These small awards should be humoristic, and don't necessarily need to award a positive aspect such as being best, but can "award" players for most incorrect answers or most hits outside their answer box. An example of a popular game that uses this approach is the multiplayer online battle arena game \emph{Heroes of Newerth}\citep{Newerth}. In their \emph{Mid Wars} game mode, a mode much more focused on fun than the competitive aspect, each player will receive two such awards at the end of each game. The awards can be based on a large number of different statistics, such as hero damage or kills, buildings destroyed, gold earned and so on\citep{MidWars}. There are also some number of awards that award feats that may not be particularly impressive, such as having no kills.
+In addition to the achievements, we can use the tracked data to keep scores. Each player or team of players receive points based on correct answers and how fast they were able to answer. A "High Scores" list compiles the best of these scores for each game mode, to historically rank the best players.
+
+While the two aforementioned methods give players long-term recognition for good performance, players might also want something to distinguish their performances from each other in one particular game (e.g. if they play several games). Lets call these short-term, per-game achievements for badges. Badges represent smaller achievements and promote competition between players playing together at the same time. By giving badges to all participating players, we also help players feel included. These small awards should be humoristic, and don't necessarily need to award a positive aspect such as being best, but can "award" players for most incorrect answers or most hits outside their answer box.
+
+An example of a popular game that uses this approach is the multiplayer online battle arena game \emph{Heroes of Newerth}\citep{Newerth}. In their \emph{Mid Wars} game mode, a mode much more focused on fun than the competitive aspect, each player will receive two such badges at the end of each game. The badges can be based on a large number of different statistics, such as hero damage or kills, buildings destroyed, gold earned and so on\citep{MidWars}. There are also some number of badges that reward feats that may not be particularly impressive, such as having no kills. Examples of such badges for our games could be:
+\begin{itemize}
+	\item \emph{Veteran}: No wrong answers on questions in the "World War II" category
+	\item \emph{Pacifist}: No correct answers on questions in the "World War II" category
+	\item \emph{Poor Aim}: Most presses outside of answer box
+\end{itemize}
+
+The first two badges utilize the category tags, while the \emph{Poor Aim} badge would use the touch data to determine how many presses were made outside of the designated answer box on each side of the screen. It would assume that touches on the left side of the screen was made by the left player an vice versa.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
