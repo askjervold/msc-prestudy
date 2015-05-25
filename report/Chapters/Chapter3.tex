@@ -12,7 +12,7 @@
 
 \section{Introduction}
 
-This chapter describes the proposed solution. It starts by discussing architectural decisions, before moving on to extensions to the existing application. We will cover changes to game modes, new methods of interaction as well as reward systems. Finally, we wrap up the chapter with a description of how the user studies will be performed.
+This chapter describes the proposed solution. It starts by discussing architectural decisions and collection and generation of data. It also considers options to increase motivation and challenge in the game through new game modes and variable difficulty. Lastly it discusses the addition of achievements, badges and high scores as additional motivation for the players.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -77,41 +77,3 @@ An example of a popular game that uses this approach is the multiplayer online b
 \end{itemize}
 
 The first two badges utilize the category tags, while the \emph{Poor Aim} badge would use the touch data to determine how many presses were made outside of the designated answer box on each side of the screen. It would assume that touches on the left side of the screen was made by the left player an vice versa.
-
-%----------------------------------------------------------------------------------------
-%	SECTION 4
-%----------------------------------------------------------------------------------------
-
-\section{User Studies}
-
-With the changes above planned, it is important that we perform user studies to understand whether or not the extensions improve the application from its current state. To be able to test for improvement, we first need to know what users think about the current application.
-
-Implementations of the application are typically museum applications placed near the end of an exhibit, and a large portion of museum visitors are primary and secondary school students. Each iteration of user testing should test several groups of users, and a selection of about 15-20 students should provide results with a good degree of representation.
-
-The selected users should play through each of the game modes. While playing, the users will be observed, and data about where they press will be collected by the application. After playing, the users will receive a questionnaire attempting to attain answers to the following questions:
-
-\begin{itemize}
-	\item How intuitive was the application? Was there any difficulties in understanding what to do or how to do it?
-	\item How difficult was the game?
-	\item How fun was the game?
-	\item How was your collaboration in team mode?
-	\item How was the competition in versus mode?
-	\item Which mode did you like best, and why?
-	\item What could make the game or application better?
-\end{itemize}
-
-Together with the collected data and the observations made during usage, their answers to the questions will give an understanding of the current state of the application.
-
-After the initial user study, the extensions described in this chapter should be implemented, and a new iteration of studies should be performed with the extended application. It is important to test the extended application with the same users from the initial study. Relevant questions for the second iteration would be:
-
-\begin{itemize}
-	\item Was the application more or less intuitive than last time? If so, what was easier/harder?
-	\item Was it more or less fun to play than last time? If so, what made it better/worse?
-	\item How was the difficulty of the game? Was it more difficult than last time? If so, what made it harder, and did you enjoy the challenge?
-	\item How was the new game mode? What is your favourite mode and why?
-	\item Did the reward system make you feel motivated? If so, when, why and how? Did it increase your performance or effort?
-	\item Did the new method of interaction feel natural? Did it improve the game?
-	\item What could make the game or application better now?
-\end{itemize}
-
-After the second iteration of testing, the gathered data can be used to further improve the application.
